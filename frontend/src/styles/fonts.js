@@ -7,24 +7,24 @@ import { css } from 'styled-components';
 // @fonts/Open_Sans_Condensed/OpenSansCondensedBold.tff
 // import bart from '../fonts'
 
-import OpenSansCondensedBold from '../fonts/Open_Sans_Condensed/OpenSansCondensedBold.tff';
-import OpenSansCondensedLight from '../fonts/Open_Sans_Condensed/OpenSansCondensedLight';
+import OpenSansCondensedBold from '../fonts/Open_Sans_Condensed/OpenSansCondensedBold.ttf';
+import OpenSansCondensedLight from '../fonts/Open_Sans_Condensed/OpenSansCondensedLight.ttf';
 
-import OpenSansCondensedLightItalic from '../fonts/Open_Sans_Condensed/OpenSansCondensedLightItalic';
+import OpenSansCondensedLightItalic from '../fonts/Open_Sans_Condensed/OpenSansCondensedLightItalic.ttf';
 
-import RobotoThin100 from '../fonts/Roboto/Roboto-Thin';
-import RobotoLight300 from '../fonts/Roboto/Roboto-Light';
-import RobotoRegular400 from '../fonts/Roboto/Roboto-Regular';
-import RobotoMedium500 from '../fonts/Roboto/Roboto-Medium';
-import RobotoBold700 from '@fonts/Roboto/Roboto-Bold';
-import RobotoBlack900 from '@fonts/Roboto/Roboto-Black';
+import RobotoThin100 from '../fonts/Roboto/Roboto-Thin.ttf';
+import RobotoLight300 from '../fonts/Roboto/Roboto-Light.ttf';
+import RobotoRegular400 from '../fonts/Roboto/Roboto-Regular.ttf';
+import RobotoMedium500 from '../fonts/Roboto/Roboto-Medium.ttf';
+import RobotoBold700 from '../fonts/Roboto/Roboto-Bold.ttf';
+import RobotoBlack900 from '../fonts/Roboto/Roboto-Black.ttf';
 
-import RobotoThinItalic100 from '@fonts/Roboto/Roboto-ThinItalic';
-import RobotoLightItalic300 from '@fonts/Roboto/Roboto-LightItalic';
-import RobotoRegularItalic400 from '@fonts/Roboto/Roboto-Italic';
-import RobotoMediumItalic500 from '@fonts/Roboto/Roboto-MediumItalic';
-import RobotoBoldItalic700 from '@fonts/Roboto/Roboto-BoldItalic';
-import RobotoBlackItalic900 from '@fonts/Roboto/Roboto-BlackItalic';
+import RobotoThinItalic100 from '../fonts/Roboto/Roboto-ThinItalic.ttf';
+import RobotoLightItalic300 from '../fonts/Roboto/Roboto-LightItalic.ttf';
+import RobotoRegularItalic400 from '../fonts/Roboto/Roboto-Italic.ttf';
+import RobotoMediumItalic500 from '../fonts/Roboto/Roboto-MediumItalic.ttf';
+import RobotoBoldItalic700 from '../fonts/Roboto/Roboto-BoldItalic.ttf';
+import RobotoBlackItalic900 from '../fonts/Roboto/Roboto-BlackItalic.ttf';
 
 const openSansCondensedNormalWeights = {
 	300: [OpenSansCondensedLight],
@@ -74,8 +74,8 @@ const createFontFaces = (family, style = 'normal') => {
 		styles += `
       @font-face {
         font-family: '${family.name}';
-        src: url(${woff2}) format('woff2'),
-            url(${woff}) format('woff');
+        src: url(${woff2}) format('ttf'),
+            url(${woff}) format('ttf');
         font-weight: ${weight};
         font-style: ${style};
         font-display: auto;
