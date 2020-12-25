@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 	res.send('API IS RUNNING');
 });
 
-app.get('/artworks', (req, res) => {
+app.get('/api/artworks', (req, res) => {
 	res.send(artworks);
 });
 
