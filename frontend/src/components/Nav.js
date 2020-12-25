@@ -1,10 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledNav = styled.nav`
+	background-color: var(--viridian);
+`;
+
+const StyledHeader = styled.nav`
+	background-color: vay(--viridan);
+`;
 
 const Nav = () => {
 	return (
-		<header>
-			header <nav> nav nav </nav>
-		</header>
+		<StyledHeader>
+			<StyledNav> nav nav </StyledNav>
+		</StyledHeader>
 	);
 };
 

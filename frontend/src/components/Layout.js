@@ -9,20 +9,19 @@ import React from 'react';
 //Layout will have things that are ALWAYS rendered. includes header, footer, any special styling etc...
 ////nav content footer
 
-const Layout = ({ children }) => {
-	console.log(children);
+const Layout = props => {
+	console.log(props.children);
 	return (
-		<div id='root'>
+		<>
 			<ThemeProvider theme={theme}>
-				<GlobalStyle>
-					<Nav />
-					<div id='content'>
-						{children}
-						<Footer />
-					</div>
-				</GlobalStyle>
+				<GlobalStyle />
+				<Nav />
+				<main>
+					{props.children}
+					<Footer />
+				</main>
 			</ThemeProvider>
-		</div>
+		</>
 	);
 };
 
